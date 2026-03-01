@@ -291,7 +291,7 @@ fetch(`/api/auctions/${encodeURIComponent(a.id)}/bid`, {
       const res = await fetch(API_BASE + "/api/bid", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, amount })
+        body: JSON.stringify({ email: name, amount })
       });
 
       const data = await res.json();
