@@ -1,0 +1,24 @@
+{
+  "brand": {
+    "siteName": "Araç İhale Platformu",
+    "tagline": "Güvenli teklif, şeffaf süreç, hızlı teslim",
+    "primaryBlue": "#0b4aa2",
+    "primaryYellow": "#ffd200",
+    "whatsAppNumber": "90XXXXXXXXXX",
+    "supportEmail": "destek@alanadiniz.com",
+    "supportPhone": "0 (5XX) XXX XX XX",
+    "address": "Adres bilgisi (Ayarlar bölümünden düzenlenir)",
+    "companyTitle": "Şirket Ünvanı"
+  },
+  "fees": {
+    "participationFee": 3000,
+    "sellerCommissionMin": 0.03,
+    "sellerCommissionMax": 0.05
+  },
+  "banners": {
+    "homeTopDesktop": "assets/banners/banner-top-desktop.png",
+    "homeTopMobile": "assets/banners/banner-top-mobile.png",
+    "homeInline": "assets/banners/banner-inline.png",
+    "auctionSidebar": "assets/banners/banner-sidebar.png"
+  }
+}

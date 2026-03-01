@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anasayfa | Araç İhale Platformu</title>
+  <link rel="icon" href="assets/img/logo-square.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Anasayfa">
+          <img src="assets/img/logo-wide.png" alt="Logo">
+        </a>
+        <nav class="navlinks" aria-label="Menü">
+          <a href="auctions.html">İhaleler</a>
+          <a href="sell.html">Aracını Sat</a>
+          <a href="how.html">Nasıl Çalışır?</a>
+          <a href="about.html">Hakkımızda</a>
+          <a href="contact.html">Destek</a>
+        </nav>
+        <div class="navright">
+          <a class="btn btn-ghost" id="whatsAppTop" href="#" rel="noopener">WhatsApp</a>
+          <a class="btn btn-primary" href="login.html">Giriş / Üyelik</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="hero">
+  <div class="container">
+    <div class="heroGrid">
+      <div class="card padded">
+        <div class="badge">Katılım Bedeli: <span id="participationFee"></span></div>
+        <h1 class="h1">İhalelerde güvenle teklif verin, süreci şeffaf takip edin.</h1>
+        <p class="sub">Katılımcı aktivasyonu tek seferlik ücret ile açılır. Kazananlar için ödeme adımları ve teslim süreçleri tek ekranda yönetilir.</p>
+        <div class="heroCtas">
+          <a class="btn btn-primary" href="auctions.html">İhaleleri Gör</a>
+          <a class="btn btn-primary" href="sell.html">Aracını Sat</a>
+          <a class="btn btn-ghost" id="whatsAppHero" href="#" rel="noopener">Destek</a>
+        </div>
+
+        <div class="kpis">
+          <div class="kpi">
+            <div class="v">Tek kullanımlık ödeme linkleri</div>
+            <div class="t">Güvenli aktivasyon ve kazanan süreçleri</div>
+          </div>
+          <div class="kpi">
+            <div class="v">Şeffaf ihale kuralları</div>
+            <div class="t">Minimum artış, uzatma, kayıtlı teklifler</div>
+          </div>
+          <div class="kpi">
+            <div class="v">WhatsApp destek</div>
+            <div class="t">Operasyon ekibi ile hızlı iletişim</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card padded">
+        <div class="banner">
+          <picture>
+            <source media="(max-width: 980px)" srcset="assets/banners/banner-top-mobile.png">
+            <img id="bannerTop" src="assets/banners/banner-top-desktop.png" alt="Banner">
+          </picture>
+        </div>
+        <div style="height:12px"></div>
+        <div class="notice">
+          <b>Katılımcı Aktivasyonu</b>
+          <div class="small">Aktivasyon, admin tarafından oluşturulan ödeme linki üzerinden yapılır. Ödeme sonrası katılım hakkı açılır.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <h2>Öne Çıkan İhaleler</h2>
+        <p>Bitmeye yakın ihaleleri kaçırmamak için takip edin.</p>
+      </div>
+      <a class="btn btn-primary" href="auctions.html">Tümünü Gör</a>
+    </div>
+    <div class="grid3" id="featured"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="banner">
+      <img id="bannerInline" src="assets/banners/banner-inline.png" alt="Banner">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <h2>Süreç Nasıl İşler?</h2>
+        <p>Üç adımda teklif verme ve teslim.</p>
+      </div>
+    </div>
+    <div class="grid3">
+      <div class="card padded">
+        <div class="help">
+          <div class="ic">1</div>
+          <div>
+            <div style="font-weight:900">Katılımcı olun</div>
+            <div class="small">Tek seferlik katılım bedeli ödenir, katılım hakkı açılır.</div>
+          </div>
+        </div>
+      </div>
+      <div class="card padded">
+        <div class="help">
+          <div class="ic">2</div>
+          <div>
+            <div style="font-weight:900">Teklif verin</div>
+            <div class="small">İhale kurallarına göre minimum artış ile teklif verilir.</div>
+          </div>
+        </div>
+      </div>
+      <div class="card padded">
+        <div class="help">
+          <div class="ic">3</div>
+          <div>
+            <div style="font-weight:900">Ödeme ve teslim</div>
+            <div class="small">Kazananlar link üzerinden ön ödeme ve evrak işlemlerini tamamlar.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div>
+          <div class="brandRow">
+            <img src="assets/img/logo-square.png" alt="Logo">
+            <div>
+              <div style="font-weight:900;color:#0b1220">Araç İhale Platformu</div>
+              <div class="small">Güvenli teklif, şeffaf süreç, hızlı teslim</div>
+            </div>
+          </div>
+          <hr class="sep">
+          <div class="small" id="footerAddress"></div>
+          <div class="small">E-posta: <a id="footerEmail" href="#"></a></div>
+          <div class="small">Telefon: <a id="footerPhone" href="#"></a></div>
+        </div>
+        <div>
+          <div style="font-weight:900;color:#0b1220;margin-bottom:8px">Kurumsal</div>
+          <div class="small"><a href="kvkk.html">KVKK Aydınlatma</a></div>
+          <div class="small"><a href="terms.html">Üyelik ve Kullanım</a></div>
+          <div class="small"><a href="cookies.html">Çerez Politikası</a></div>
+          <div class="small"><a href="auction-rules.html">İhale Kuralları</a></div>
+          <div class="small"><a href="seller-agreement.html">Satıcı Aracılık</a></div>
+        </div>
+        <div>
+          <div style="font-weight:900;color:#0b1220;margin-bottom:8px">Hızlı Erişim</div>
+          <div class="small"><a href="auctions.html">Tüm İhaleler</a></div>
+          <div class="small"><a href="sell.html">Aracını Sat</a></div>
+          <div class="small"><a href="how.html">Süreç</a></div>
+          <div class="small"><a href="contact.html">İletişim</a></div>
+        </div>
+      </div>
+      <hr class="sep">
+      <div class="small">© <span id="year"></span> <span id="companyTitle"></span>. Tüm hakları saklıdır.</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    (async ()=>{
+      const settings = await loadJSON('data/settings.json');
+      setThemeFromSettings(settings);
+
+      const wa = waLink(settings.brand.whatsAppNumber, "Merhaba, destek almak istiyorum.");
+      qs('#whatsAppTop').href = wa;
+
+      qs('#footerAddress').textContent = settings.brand.address;
+      const em = qs('#footerEmail'); em.textContent = settings.brand.supportEmail; em.href = 'mailto:' + settings.brand.supportEmail;
+      const ph = qs('#footerPhone'); ph.textContent = settings.brand.supportPhone; ph.href = 'tel:' + settings.brand.supportPhone.replace(/\s/g,'');
+      qs('#companyTitle').textContent = settings.brand.companyTitle;
+      qs('#year').textContent = new Date().getFullYear();
+    })();
+  </script>
+  
+<script>
+(async ()=>{
+  const settings = await loadJSON('data/settings.json');
+  qs('#participationFee').textContent = tl(settings.fees.participationFee);
+  qs('#whatsAppHero').href = waLink(settings.brand.whatsAppNumber, "Merhaba, destek almak istiyorum.");
+
+  // banners from settings
+  if(settings.banners?.homeTopDesktop) qs('#bannerTop').src = settings.banners.homeTopDesktop;
+  if(settings.banners?.homeInline) qs('#bannerInline').src = settings.banners.homeInline;
+
+  const auctions = await loadJSON('data/auctions.json');
+  const list = auctions.filter(a=>a.status==='Yayında').slice(0,3);
+  const wrap = qs('#featured');
+  wrap.innerHTML = list.map(a=>{
+    const ends = countdown(a.endsAt);
+    return `
+    <article class="card auction">
+      <div class="thumb"><img src="${a.images[0]}" alt=""></div>
+      <div class="body">
+        <div class="meta">
+          <span class="pill live">Yayında</span>
+          <span class="pill">${a.city}</span>
+          <span class="pill">${a.year}</span>
+        </div>
+        <h3 class="title">${a.title}</h3>
+        <div class="line"><span>Bitişe kalan</span><span class="timer" data-ends="${a.endsAt}">${ends}</span></div>
+        <div class="price">${tl(a.currentBid)}</div>
+        <div class="actions">
+          <a class="btn btn-primary" href="auction.html?id=${encodeURIComponent(a.id)}">İncele</a>
+          <a class="btn btn-ghost" href="${waLink(settings.brand.whatsAppNumber, a.id+' hakkında bilgi almak istiyorum.')}">Sor</a>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+
+  // update countdown
+  setInterval(()=>{
+    qsa('[data-ends]').forEach(el=> el.textContent = countdown(el.getAttribute('data-ends')));
+  }, 1000);
+})();
+</script>
+
+</body>
+</html>

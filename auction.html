@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İhale Detay | Araç İhale Platformu</title>
+  <link rel="icon" href="assets/img/logo-square.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Anasayfa">
+          <img src="assets/img/logo-wide.png" alt="Logo">
+        </a>
+        <nav class="navlinks" aria-label="Menü">
+          <a href="auctions.html">İhaleler</a>
+          <a href="sell.html">Aracını Sat</a>
+          <a href="how.html">Nasıl Çalışır?</a>
+          <a href="about.html">Hakkımızda</a>
+          <a href="contact.html">Destek</a>
+        </nav>
+        <div class="navright">
+          <a class="btn btn-ghost" id="whatsAppTop" href="#" rel="noopener">WhatsApp</a>
+          <a class="btn btn-primary" href="login.html">Giriş / Üyelik</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="section">
+  <div class="container">
+    <div class="detailGrid">
+      <div>
+        <div class="card padded" id="auctionCard">
+          <div class="gallery">
+            <div class="main"><img id="imgMain" src="" alt=""></div>
+            <div class="side">
+              <img id="img2" src="" alt="">
+              <img id="img3" src="" alt="">
+            </div>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="meta" id="meta"></div>
+          <h1 class="h1" id="title" style="font-size:26px"></h1>
+          <div class="grid2">
+            <div class="notice">
+              <b>Mevcut teklif</b>
+              <div class="price" id="currentBid" style="margin-top:6px"></div>
+              <div class="small" id="minInc"></div>
+            </div>
+            <div class="notice">
+              <b>Bitişe kalan</b>
+              <div class="timer" id="timer" style="margin-top:6px"></div>
+              <div class="small" id="endsAt"></div>
+            </div>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="notice">
+            <b>Ödeme şartları</b>
+            <div class="small" id="payInfo" style="margin-top:6px"></div>
+          </div>
+
+          <div style="height:12px"></div>
+          <table class="table" id="spec"></table>
+
+          <div style="height:12px"></div>
+          <div class="notice">
+            <b>Açıklama</b>
+            <div class="small" id="notes" style="margin-top:6px"></div>
+          </div>
+
+          <div style="height:12px"></div>
+          <div class="formActions">
+            <a class="btn btn-primary" href="activate.html">Katılımcı Aktivasyonu</a>
+            <a class="btn btn-primary" id="askWA" href="#" rel="noopener">WhatsApp ile sor</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="card box">
+          <div style="font-weight:900">Teklif Ver</div>
+          <div class="small" style="margin-top:6px">Teklif verme için katılımcı statüsü gereklidir.</div>
+          <div style="height:10px"></div>
+          <input class="input" id="bidInput" placeholder="Teklif tutarı (TL)">
+          <div class="small" id="bidHint" style="margin-top:8px"></div>
+          <div style="height:10px"></div>
+          <button class="btn btn-primary" id="bidBtn" type="button" style="width:100%">Teklifi Kaydet</button>
+          <div style="height:10px"></div>
+          <div class="small" id="bidResult"></div>
+        </div>
+
+        <div style="height:12px"></div>
+        <div class="banner">
+          <img id="bannerSide" src="assets/banners/banner-sidebar.png" alt="Banner">
+        </div>
+
+        <div style="height:12px"></div>
+        <div class="card box">
+          <div style="font-weight:900">Güvence</div>
+          <div class="small" style="margin-top:6px">Tüm teklif hareketleri sistemde kayıt altına alınır. Süreç adımları kullanıcı panelinden takip edilir.</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div>
+          <div class="brandRow">
+            <img src="assets/img/logo-square.png" alt="Logo">
+            <div>
+              <div style="font-weight:900;color:#0b1220">Araç İhale Platformu</div>
+              <div class="small">Güvenli teklif, şeffaf süreç, hızlı teslim</div>
+            </div>
+          </div>
+          <hr class="sep">
+          <div class="small" id="footerAddress"></div>
+          <div class="small">E-posta: <a id="footerEmail" href="#"></a></div>
+          <div class="small">Telefon: <a id="footerPhone" href="#"></a></div>
+        </div>
+        <div>
+          <div style="font-weight:900;color:#0b1220;margin-bottom:8px">Kurumsal</div>
+          <div class="small"><a href="kvkk.html">KVKK Aydınlatma</a></div>
+          <div class="small"><a href="terms.html">Üyelik ve Kullanım</a></div>
+          <div class="small"><a href="cookies.html">Çerez Politikası</a></div>
+          <div class="small"><a href="auction-rules.html">İhale Kuralları</a></div>
+          <div class="small"><a href="seller-agreement.html">Satıcı Aracılık</a></div>
+        </div>
+        <div>
+          <div style="font-weight:900;color:#0b1220;margin-bottom:8px">Hızlı Erişim</div>
+          <div class="small"><a href="auctions.html">Tüm İhaleler</a></div>
+          <div class="small"><a href="sell.html">Aracını Sat</a></div>
+          <div class="small"><a href="how.html">Süreç</a></div>
+          <div class="small"><a href="contact.html">İletişim</a></div>
+        </div>
+      </div>
+      <hr class="sep">
+      <div class="small">© <span id="year"></span> <span id="companyTitle"></span>. Tüm hakları saklıdır.</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    (async ()=>{
+      const settings = await loadJSON('data/settings.json');
+      setThemeFromSettings(settings);
+
+      const wa = waLink(settings.brand.whatsAppNumber, "Merhaba, destek almak istiyorum.");
+      qs('#whatsAppTop').href = wa;
+
+      qs('#footerAddress').textContent = settings.brand.address;
+      const em = qs('#footerEmail'); em.textContent = settings.brand.supportEmail; em.href = 'mailto:' + settings.brand.supportEmail;
+      const ph = qs('#footerPhone'); ph.textContent = settings.brand.supportPhone; ph.href = 'tel:' + settings.brand.supportPhone.replace(/\s/g,'');
+      qs('#companyTitle').textContent = settings.brand.companyTitle;
+      qs('#year').textContent = new Date().getFullYear();
+    })();
+  </script>
+  
+<script>
+(async ()=>{
+  const settings = await loadJSON('data/settings.json');
+  const auctions = await loadJSON('data/auctions.json');
+  if(settings.banners?.auctionSidebar) qs('#bannerSide').src = settings.banners.auctionSidebar;
+
+  const params = new URLSearchParams(location.search);
+  const id = params.get('id');
+  const a = auctions.find(x=>x.id===id) || auctions[0];
+
+  qs('#imgMain').src = a.images[0];
+  qs('#img2').src = a.images[1] || a.images[0];
+  qs('#img3').src = a.images[2] || a.images[0];
+
+  qs('#title').textContent = a.title;
+
+  const meta = qs('#meta');
+  meta.innerHTML = `
+    <span class="pill ${a.status==='Yayında'?'live':'soon'}">${a.status}</span>
+    <span class="pill">${a.id}</span>
+    <span class="pill">${a.city}</span>
+    <span class="pill">${a.year}</span>
+    <span class="pill">${a.km.toLocaleString('tr-TR')} km</span>
+    <span class="pill">${a.fuel}</span>
+    <span class="pill">${a.gear}</span>
+  `;
+
+  qs('#currentBid').textContent = a.currentBid>0 ? tl(a.currentBid) : "Başlangıçta";
+  qs('#minInc').textContent = "Minimum artış: " + tl(a.minIncrease);
+
+  qs('#endsAt').textContent = new Date(a.endsAt).toLocaleString('tr-TR');
+
+  const pay = a.details?.payment;
+  const payText = `${pay?.prepayRule?.label || ''} • Sigorta bedeli: ${tl(pay?.insuranceFee||0)}`;
+  qs('#payInfo').textContent = payText;
+
+  const spec = qs('#spec');
+  const rows = [
+    ["Şehir", a.city],
+    ["Yıl", a.year],
+    ["Kilometre", a.km.toLocaleString('tr-TR')],
+    ["Yakıt", a.fuel],
+    ["Vites", a.gear],
+    ["Plaka", a.details?.plateHidden ? "Gizli" : "Paylaşılır"],
+  ];
+  spec.innerHTML = rows.map(r=>`<tr><td style="width:38%;color:var(--muted)">${r[0]}</td><td style="font-weight:800">${r[1]}</td></tr>`).join('');
+
+  qs('#notes').textContent = a.details?.notes || "";
+
+  qs('#askWA').href = waLink(settings.brand.whatsAppNumber, a.id+" hakkında bilgi almak istiyorum.");
+
+  function updateTimer(){
+    qs('#timer').textContent = countdown(a.endsAt);
+  }
+  updateTimer();
+  setInterval(updateTimer, 1000);
+
+  qs('#bidHint').textContent = "Teklif tutarı minimum artış kuralına uygun olmalıdır.";
+  qs('#bidBtn').addEventListener('click', ()=>{
+    const raw = (qs('#bidInput').value||'').replace(/\D/g,'');
+    const val = Number(raw||0);
+    const min = (a.currentBid||0) + a.minIncrease;
+    if(!val || val < min){
+      qs('#bidResult').innerHTML = `<span style="color:#b91c1c;font-weight:800">Teklif en az ${tl(min)} olmalıdır.</span>`;
+      return;
+    }
+    // Gerçek kayıt: backend API'ye gönder
+qs('#bidResult').textContent = "Kaydediliyor...";
+fetch(`/api/auctions/${encodeURIComponent(a.id)}/bid`, {
+  method: "POST",
+  headers: {"Content-Type":"application/json"},
+  body: JSON.stringify({ user: "Misafir", amount: val })
+})
+.then(async r=>{
+  const data = await r.json().catch(()=>({}));
+  if(!r.ok) throw new Error(data.error || "Teklif kaydedilemedi");
+  return data;
+})
+.then(data=>{
+  qs('#bidResult').innerHTML = `<span style="color:#166534;font-weight:900">Teklif kaydedildi: ${tl(val)}</span>`;
+  // ekranda güncelle
+  if(data.currentBid) {
+    qs('#currentBid').textContent = tl(Number(data.currentBid));
+  }
+})
+.catch(err=>{
+  qs('#bidResult').innerHTML = `<span style="color:#b91c1c;font-weight:800">${err.message}</span>`;
+});
+  });
+})();
+</script>
+
+</body>
+</html>

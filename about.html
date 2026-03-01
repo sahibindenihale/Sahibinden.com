@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hakkımızda | Araç İhale Platformu</title>
+  <link rel="icon" href="assets/img/logo-square.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Anasayfa">
+          <img src="assets/img/logo-wide.png" alt="Logo">
+        </a>
+        <nav class="navlinks" aria-label="Menü">
+          <a href="auctions.html">İhaleler</a>
+          <a href="sell.html">Aracını Sat</a>
+          <a href="how.html">Nasıl Çalışır?</a>
+          <a href="about.html">Hakkımızda</a>
+          <a href="contact.html">Destek</a>
+        </nav>
+        <div class="navright">
+          <a class="btn btn-ghost" id="whatsAppTop" href="#" rel="noopener">WhatsApp</a>
+          <a class="btn btn-primary" href="login.html">Giriş / Üyelik</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="section">
+  <div class="container">
+    <div class="sectionTitle">
+      <div>
+        <h2>Hakkımızda</h2>
+        <p>İhale süreçlerini tek merkezden yönetmek için kurulan operasyon odaklı platform.</p>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card padded">
+        <div style="font-weight:900">Misyon</div>
+        <div class="small" style="margin-top:8px">Araç satış süreçlerinde güveni ve şeffaflığı artırmak; ödeme, evrak ve teslim adımlarını düzenli bir yapıda yönetmek.</div>
+        <div style="height:10px"></div>
+        <div style="font-weight:900">Vizyon</div>
+        <div class="small" style="margin-top:8px">Türkiye’de ihale ile araç satışını standartları net, süreçleri takip edilebilir hale getirmek.</div>
+      </div>
+      <div class="card padded">
+        <div style="font-weight:900;margin-bottom:10px">Neden Biz?</div>
+        <div class="help"><div class="ic">✓</div><div><div style="font-weight:900">Operasyon yönetimi</div><div class="small">Satıcı başvuruları, ihale kurgusu, kazanan süreci ve teslim adımları uçtan uca yürütülür.</div></div></div>
+        <div style="height:10px"></div>
+        <div class="help"><div class="ic">✓</div><div><div style="font-weight:900">Tek kullanımlık linkler</div><div class="small">Aktivasyon ve ödeme süreçleri linkler üzerinden güvenli şekilde yönetilir.</div></div></div>
+        <div style="height:10px"></div>
+        <div class="help"><div class="ic">✓</div><div><div style="font-weight:900">WhatsApp destek</div><div class="small">Hızlı iletişim için WhatsApp hattı üzerinden destek sağlanır.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div>
+          <div class="brandRow">
+            <img src="assets/img/logo-square.png" alt="Logo">
+            <div>
+              <div style="font-weight:900;color:#0b1220">Araç İhale Platformu</div>
+              <div class="small">Güvenli teklif, şeffaf süreç, hızlı teslim</div>
+            </div>
+          </div>
+          <hr class="sep">
+          <div class="small" id="footerAddress"></div>
+          <div class="small">E-posta: <a id="footerEmail" href="#"></a></div>
+          <div class="small">Telefon: <a id="footerPhone" href="#"></a></div>
+        </div>
+        <div>
+          <div style="font-weight:900;color:#0b1220;margin-bottom:8px">Kurumsal</div>
+          <div class="small"><a href="kvkk.html">KVKK Aydınlatma</a></div>
+          <div class="small"><a href="terms.html">Üyelik ve Kullanım</a></div>
+          <div class="small"><a href="cookies.html">Çerez Politikası</a></div>
+          <div class="small"><a href="auction-rules.html">İhale Kuralları</a></div>
+          <div class="small"><a href="seller-agreement.html">Satıcı Aracılık</a></div>
+        </div>
+        <div>
+          <div style="font-weight:900;color:#0b1220;margin-bottom:8px">Hızlı Erişim</div>
+          <div class="small"><a href="auctions.html">Tüm İhaleler</a></div>
+          <div class="small"><a href="sell.html">Aracını Sat</a></div>
+          <div class="small"><a href="how.html">Süreç</a></div>
+          <div class="small"><a href="contact.html">İletişim</a></div>
+        </div>
+      </div>
+      <hr class="sep">
+      <div class="small">© <span id="year"></span> <span id="companyTitle"></span>. Tüm hakları saklıdır.</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    (async ()=>{
+      const settings = await loadJSON('data/settings.json');
+      setThemeFromSettings(settings);
+
+      const wa = waLink(settings.brand.whatsAppNumber, "Merhaba, destek almak istiyorum.");
+      qs('#whatsAppTop').href = wa;
+
+      qs('#footerAddress').textContent = settings.brand.address;
+      const em = qs('#footerEmail'); em.textContent = settings.brand.supportEmail; em.href = 'mailto:' + settings.brand.supportEmail;
+      const ph = qs('#footerPhone'); ph.textContent = settings.brand.supportPhone; ph.href = 'tel:' + settings.brand.supportPhone.replace(/\s/g,'');
+      qs('#companyTitle').textContent = settings.brand.companyTitle;
+      qs('#year').textContent = new Date().getFullYear();
+    })();
+  </script>
+  
+</body>
+</html>

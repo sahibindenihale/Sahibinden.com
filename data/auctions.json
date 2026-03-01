@@ -1,0 +1,95 @@
+[
+  {
+    "id": "A-1027",
+    "title": "2021 Sedan 1.6 Otomatik",
+    "city": "İstanbul",
+    "year": 2021,
+    "km": 68500,
+    "fuel": "Benzin",
+    "gear": "Otomatik",
+    "status": "Yayında",
+    "currentBid": 945000,
+    "minIncrease": 5000,
+    "endsAt": "2026-02-28T18:56:40.616669Z",
+    "images": [
+      "assets/img/car1.png",
+      "assets/img/car2.png",
+      "assets/img/car3.png"
+    ],
+    "details": {
+      "plateHidden": true,
+      "notes": "Ekspertiz raporu dosyalarda yer almaktadır. Araç teslimi randevu ile yapılır.",
+      "payment": {
+        "insuranceFee": 12500,
+        "prepayRule": {
+          "type": "fixed",
+          "value": 100000,
+          "label": "Ön ödeme: 100.000 TL + sigorta bedeli"
+        }
+      },
+      "reservePrice": 900000
+    }
+  },
+  {
+    "id": "A-1028",
+    "title": "2019 Hatchback 1.0 Turbo",
+    "city": "Ankara",
+    "year": 2019,
+    "km": 91200,
+    "fuel": "Benzin",
+    "gear": "Manuel",
+    "status": "Yayında",
+    "currentBid": 585000,
+    "minIncrease": 2500,
+    "endsAt": "2026-02-28T06:56:40.616685Z",
+    "images": [
+      "assets/img/car4.png",
+      "assets/img/car2.png",
+      "assets/img/car5.png"
+    ],
+    "details": {
+      "plateHidden": true,
+      "notes": "Detaylı fotoğraflar ve beyanlar araç sayfasında yer almaktadır.",
+      "payment": {
+        "insuranceFee": 7500,
+        "prepayRule": {
+          "type": "fixed",
+          "value": 50000,
+          "label": "Ön ödeme: 50.000 TL + sigorta bedeli"
+        }
+      },
+      "reservePrice": 540000
+    }
+  },
+  {
+    "id": "A-1029",
+    "title": "2023 SUV 4x4 Dizel Otomatik",
+    "city": "İzmir",
+    "year": 2023,
+    "km": 24500,
+    "fuel": "Dizel",
+    "gear": "Otomatik",
+    "status": "Yakında",
+    "currentBid": 0,
+    "minIncrease": 10000,
+    "endsAt": "2026-03-02T00:56:40.616688Z",
+    "images": [
+      "assets/img/car6.png",
+      "assets/img/car3.png",
+      "assets/img/car5.png"
+    ],
+    "details": {
+      "plateHidden": true,
+      "notes": "İhale başlangıcında ekspertiz raporu yayımlanacaktır.",
+      "payment": {
+        "insuranceFee": 22000,
+        "prepayRule": {
+          "type": "fixed",
+          "value": 250000,
+          "label": "Ön ödeme: 250.000 TL + sigorta bedeli"
+        }
+      },
+      "reservePrice": 0
+    }
+  }
+]
